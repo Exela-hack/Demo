@@ -1,0 +1,13 @@
+<div>
+  {{teamrepo.reponame}}
+  {{teamrepo.repohttpurl}}
+  {{teamrepo.reposshurl}}
+  {{teamrepo.repohtmlurl}}
+  {{teamrepo.teamname}}
+  {{teamrepo.eventname}}
+  <button (click)="getcontent(teamrepo.url)">GetContent</button>
+</div>
+
+<div *ngFor="let content of contentlist">
+<button (click)="getcon(content.url)">{{content.name}}</button>
+</div>

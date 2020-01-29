@@ -1,0 +1,18 @@
+
+<div *ngFor="let event of events">
+<button (click)="geteventinfo(event)">{{event}}</button><br><br>
+</div>
+
+<div *ngFor="let teamofcurrentevent of teamofcurrentevents">
+{{teamofcurrentevent}} <button (click)="createrepository(teamofcurrentevent)">CreateRepository</button>
+</div>
+
+<div *ngFor="let repo of repolist">
+
+{{repo.reponame}}
+{{repo.repohttpurl}}
+{{repo.reposshurl}}
+{{repo.repohtmlurl}}
+{{repo.teamname}}
+{{repo.eventname}}
+</div>
